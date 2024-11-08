@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import threading
 import time
 import queue
@@ -127,8 +129,8 @@ def handle_data(html):
         print(data_dict)
         data_list.append(data_dict)
 
-    # if data_list:
-        # save_data_to_file(data_list)
+    if data_list:
+        save_data_to_file(data_list)
     return page
 
 def save_data_to_file(data_list):
